@@ -38,7 +38,7 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-s
       <p>Stand out, get noticed, and put your brand in front of more people with promotion packages designed for creators, businesses, and growing brands.</p>
       <div class="hero-actions">
         <a class="btn" href="#packages">View Promotion Packages ↗</a>
-        <a class="btn secondary" href="https://www.instagram.com/" target="_blank" rel="noopener">Message on Instagram</a>
+        <a class="btn secondary" href="https://www.instagram.com/_ohio_community/" target="_blank" rel="noopener">Message on Instagram</a>
       </div>
       <div class="trust"><span>Creator & brand promotions</span><span>Flexible packages</span><span>Direct contact</span></div>
     </div>
@@ -65,8 +65,8 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-s
         <a class="btn" href="mailto:ohiocommunity.promo@gmail.com?subject=Promotion%20Package%20Inquiry">Email for Booking ↗</a>
       </div>
       <div class="contact-links">
-        <a class="contact-link" href="mailto:ohiocommunity.promo@gmail.com?subject=Promotion%20Package%20Inquiry"><span class="contact-icon">✉</span><span><strong>Email Us</strong><small>YOUR-EMAIL@example.com</small></span></a>
-        <a class="contact-link" href="https://www.instagram.com/_ohio_community/" target="_blank" rel="noopener"><span class="contact-icon">◎</span><span><strong>Instagram DM</strong><small>@YOUR-USERNAME · Message us directly</small></span></a>
+        <a class="contact-link" href="mailto:ohiocommunity.promo@gmail.com?subject=Promotion%20Package%20Inquiry"><span class="contact-icon">✉</span><span><strong>Email Us</strong><small>ohiocommunity.promo@gmail.com</small></span></a>
+        <a class="contact-link" href="https://www.instagram.com/_ohio_community/" target="_blank" rel="noopener"><span class="contact-icon">◎</span><span><strong>Instagram DM</strong><small>@_ohio_community · Message us directly</small></span></a>
       </div>
     </div>
   </section>
@@ -90,7 +90,7 @@ packages.forEach((p,i)=>{
  card.innerHTML=`${p.featured?'<span class="tag">'+(i===7?'FULL MONTH':'POPULAR')+'</span>':''}
  <div class="plan">Package ${i+1} · ${p.name}</div><div class="price">$${p.price}<small> / package</small></div>
  <p class="summary">${p.summary}</p><ul class="features">${p.features.map(f=>`<li>${f}</li>`).join("")}</ul>
- <a class="btn" href="mailto:YOUR-ohiocommunity.support@gmail.com?subject=${encodeURIComponent("Booking inquiry: "+p.name+" ($"+p.price+")")}&body=${encodeURIComponent("Hi, I'm interested in the "+p.name+" package ($"+p.price+"). Please share the next steps.")}">Choose Package ↗</a>`;
+ <a class="btn" href="mailto:ohiocommunity.support@gmail.com?subject=${encodeURIComponent("Booking inquiry: "+p.name+" ($"+p.price+")")}&body=${encodeURIComponent("Hi, I'm interested in the "+p.name+" package ($"+p.price+"). Please share the next steps.")}">Choose Package ↗</a>`;
  grid.appendChild(card);
 });
 document.getElementById("year").textContent=new Date().getFullYear();
