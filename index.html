@@ -62,11 +62,11 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-s
         <div class="eyebrow">LET'S WORK TOGETHER</div>
         <h2>Ready to promote <span class="gradient">your brand?</span></h2>
         <p>Choose a package, then contact us by email or Instagram DM. For a custom or monthly plan, tell us about your page and promotion goals.</p>
-        <a class="btn" href="mailto:YOUR-EMAIL@example.com?subject=Promotion%20Package%20Inquiry">Email for Booking ↗</a>
+        <a class="btn" href="mailto:ohiocommunity.promo@gmail.com?subject=Promotion%20Package%20Inquiry">Email for Booking ↗</a>
       </div>
       <div class="contact-links">
-        <a class="contact-link" href="mailto:YOUR-EMAIL@example.com?subject=Promotion%20Package%20Inquiry"><span class="contact-icon">✉</span><span><strong>Email Us</strong><small>YOUR-EMAIL@example.com</small></span></a>
-        <a class="contact-link" href="https://www.instagram.com/YOUR-USERNAME/" target="_blank" rel="noopener"><span class="contact-icon">◎</span><span><strong>Instagram DM</strong><small>@YOUR-USERNAME · Message us directly</small></span></a>
+        <a class="contact-link" href="mailto:ohiocommunity.promo@gmail.com?subject=Promotion%20Package%20Inquiry"><span class="contact-icon">✉</span><span><strong>Email Us</strong><small>YOUR-EMAIL@example.com</small></span></a>
+        <a class="contact-link" href="https://www.instagram.com/_ohio_community/" target="_blank" rel="noopener"><span class="contact-icon">◎</span><span><strong>Instagram DM</strong><small>@YOUR-USERNAME · Message us directly</small></span></a>
       </div>
     </div>
   </section>
@@ -90,7 +90,7 @@ packages.forEach((p,i)=>{
  card.innerHTML=`${p.featured?'<span class="tag">'+(i===7?'FULL MONTH':'POPULAR')+'</span>':''}
  <div class="plan">Package ${i+1} · ${p.name}</div><div class="price">$${p.price}<small> / package</small></div>
  <p class="summary">${p.summary}</p><ul class="features">${p.features.map(f=>`<li>${f}</li>`).join("")}</ul>
- <a class="btn" href="mailto:YOUR-EMAIL@example.com?subject=${encodeURIComponent("Booking inquiry: "+p.name+" ($"+p.price+")")}&body=${encodeURIComponent("Hi, I'm interested in the "+p.name+" package ($"+p.price+"). Please share the next steps.")}">Choose Package ↗</a>`;
+ <a class="btn" href="mailto:YOUR-ohiocommunity.support@gmail.com?subject=${encodeURIComponent("Booking inquiry: "+p.name+" ($"+p.price+")")}&body=${encodeURIComponent("Hi, I'm interested in the "+p.name+" package ($"+p.price+"). Please share the next steps.")}">Choose Package ↗</a>`;
  grid.appendChild(card);
 });
 document.getElementById("year").textContent=new Date().getFullYear();
